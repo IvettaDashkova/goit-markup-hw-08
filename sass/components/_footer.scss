@@ -1,0 +1,114 @@
+.footer {
+	background-color: $secondary-bcg-color;
+	padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+.address-box {
+    // margin-right: 70px;
+    margin-bottom: 60px;
+}
+.address-box__logo {
+	@extend .logo;
+	color: $white-text-color;
+	margin-bottom: 20px;
+}
+.address-box__contacts {
+	font-style: normal;
+	color: $white-text-color;
+}
+.address-box__item {
+	display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $white-text-color;
+    &:not(:last-child) {
+    // margin-bottom: 9px; 
+    margin-bottom: 8px;
+    }
+}
+.address-box__link {
+	@extend .link;
+	color: $color-link-ftr;
+	font-weight: 400;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+    display: block;
+    &:hover,
+    &:focus {
+	color: $white-text-color;
+    }
+}
+.join {
+	font-weight: 700;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+    color: $white-text-color;
+    margin-bottom: 60px;
+	// padding-top: 12px;
+	// margin-right: 93px;
+}
+.join__list {
+	@extend .network-list;
+	@extend .flexbox; 
+	@extend .list; 
+	@extend .aligns-center; 
+	margin-top: 20px;
+}
+.join__link {
+	background-color: rgba(255, 255, 255, 0.1);
+	transition-property: background-color;
+	transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+	background-color: $color-accent;
+    }
+}
+.join__icon {
+	fill: $white-text-color;
+}
+.subscription {
+	font-weight: 700;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: $white-text-color;
+	// padding-top: 12px;
+}
+.subscription__input {
+    // width: 350px;
+    width: 100%;
+	padding: 15px 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 4px;
+	background-color: $secondary-bcg-color;
+	color: $white-text-color;
+	transition-property: border-color;
+	transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+	border-color: $white-text-color;
+    }
+}
+.subscription__btn {
+	@extend .btn;
+	display: inline-flex;
+	align-items: center;
+	padding-left: 28px;
+	padding-right: 28px;
+    margin-left: 12px;
+    &:hover,
+    &:focus {
+	background-color: $white-text-color;
+	color: $color-accent;
+    }
+}
+.subscription__icon {
+	fill: currentColor;
+	margin-left: 10px;
+}

@@ -1,14 +1,29 @@
 .navigation {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: 767px) {
+         justify-content: space-between;
+    }
 }
 .site-nav {
-    margin-bottom: 60px;
-    text-align: center;
+    @extend .list;
+    
+    @media screen and (max-width: 767px) {
+       margin-bottom: 60px;
+        text-align: center;
+    }
+    @media screen and (min-width: 768px) {
+       display: flex;
+       align-items: center;
+    }
 }
 .site-nav__item:not(:last-child) {
-    margin-bottom: 40px;
+     @media screen and (max-width: 767px) {
+       margin-bottom: 40px;
+    }
+    @media screen and (min-width: 768px) {
+        margin-right: 50px;
+    }
 }
 .site-nav__link {
     @extend .link;
@@ -20,6 +35,9 @@
 	color: $color-accent;
     position: relative;
     padding-bottom: 8px;
+      @media screen and (min-width: 768px) {
+        padding-bottom: 28px;
+    }
     }
     &--current:after {
 	position: absolute;
@@ -29,7 +47,8 @@
 	height: 4px;
 	border-radius: 2px;
 	background-color: $color-accent;
-	content: "";    
+    content: "";  
+  
     }
     &:hover,
     &:focus {
@@ -38,17 +57,23 @@
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);   
     }
+   
 }
 .nav-contacts {
     @extend .list;
+    
+    @media screen and (min-width: 768px) {
+    margin-left: 84px;
+    }
 }
 .nav-contacts__item:first-child {
-    margin-bottom: 16px;
+    @media screen and (max-width: 767px) {
+       margin-bottom: 16px;
+    }
 }
 .nav-contacts__link {
 	@extend .link;
     @extend .flexbox;
-    justify-content: center;
 	// padding-top: 32px;
 	// padding-bottom: 32px;
     color: $secondary-text-color;
@@ -59,11 +84,29 @@
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
+    @media screen and (max-width: 767px) {
+       justify-content: center;
+    }
+    &:first-child {
+        @media screen and (min-width: 768px) {
+         margin-bottom: 10px;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.02em;
+        justify-content: start;
+        
+        }
+    
+    
 }
 .nav-contacts__icon {
 	margin-right: 10px;
 	fill: currentColor;
-	display: block;
+    display: block;
 	width: 16px;
     height: 16px;
     .nav-contacts__link:hover &,
@@ -73,4 +116,7 @@
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
+     @media screen and (min-width: 768px) {
+         margin-right: 8px;
+        }
 }
