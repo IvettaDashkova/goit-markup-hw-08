@@ -39,7 +39,7 @@ img {
   height: auto;
 }
 
-.list, .site-nav, .nav-contacts, .features__list, .network-list, .join__list, .clients__list, .filter, .portfolio {
+.list, .site-nav, .nav-contacts, .features__list, .team-list, .network-list, .join__list, .clients__list, .filter, .portfolio {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -122,6 +122,13 @@ img {
   position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .logo, .address-box__logo {
@@ -267,7 +274,8 @@ img {
 
 @media screen and (min-width: 768px) {
   .site-nav__link--current {
-    padding-bottom: 28px;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -295,12 +303,19 @@ img {
 @media screen and (min-width: 768px) {
   .nav-contacts {
     margin-left: 84px;
+    padding-top: 21px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .nav-contacts__item:first-child {
     margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-contacts__item:first-child {
+    margin-bottom: 10px;
   }
 }
 
@@ -373,11 +388,22 @@ img {
   background-color: #2f303a;
   color: #ffffff;
   text-align: center;
-  height: 400px;
-  max-width: 480px;
-  padding-top: 118px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 118px;
+  height: 400px;
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+  }
 }
 
 .hero__title {
@@ -388,6 +414,12 @@ img {
   text-transform: uppercase;
   margin: 0em;
   margin-bottom: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__title {
+    margin-bottom: 30px;
+  }
 }
 
 .hero__btn:hover, .hero__btn:focus {
@@ -670,12 +702,31 @@ img {
   padding-bottom: 60px;
 }
 
-.features__item {
-  width: 100%;
+@media screen and (min-width: 768px) {
+  .features__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
-.features__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .features__item {
+    width: 100%;
+  }
+  .features__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features__item {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
 }
 
 .features__icon {
@@ -698,6 +749,12 @@ img {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .features__title {
+    text-align: left;
+  }
+}
+
 .we-are-doing {
   display: none;
 }
@@ -708,6 +765,24 @@ img {
   background-color: #f5f4fa;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    margin: -15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-item {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
 }
 
 .team-item:not(:last-child) {
@@ -848,13 +923,36 @@ img {
   text-align: center;
 }
 
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .address-box {
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .address-box {
+    width: 50%;
+  }
 }
 
 .address-box__logo {
   color: #ffffff;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .address-box__logo {
+    margin-right: 0;
+  }
 }
 
 .address-box__contacts {
@@ -894,6 +992,12 @@ img {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .join {
+    width: 50%;
+  }
+}
+
 .join__list {
   margin-top: 20px;
 }
@@ -925,7 +1029,6 @@ img {
 }
 
 .subscription__input {
-  width: 100%;
   padding: 15px 16px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -943,6 +1046,19 @@ img {
 
 .subscription__input:hover, .subscription__input:focus {
   border-color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .subscription__input {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subscription__input {
+    width: 450px;
+    display: block;
+  }
 }
 
 .subscription__btn {

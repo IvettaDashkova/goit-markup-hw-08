@@ -4,14 +4,25 @@
     padding-bottom: 60px;
     text-align: center;
 }
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .address-box {
     // margin-right: 70px;
     margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+        width: 50%;
+    }
 }
 .address-box__logo {
 	@extend .logo;
 	color: $white-text-color;
-	margin-bottom: 20px;
+    margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+        margin-right: 0;
+    }
 }
 .address-box__contacts {
 	font-style: normal;
@@ -47,7 +58,10 @@
     color: $white-text-color;
     margin-bottom: 60px;
 	// padding-top: 12px;
-	// margin-right: 93px;
+    // margin-right: 93px;
+    @media screen and (min-width: 768px) {
+        width: 50%;
+    }
 }
 .join__list {
 	@extend .network-list;
@@ -79,7 +93,7 @@
 }
 .subscription__input {
     // width: 350px;
-    width: 100%;
+   
 	padding: 15px 16px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -93,6 +107,13 @@
     &:hover,
     &:focus {
 	border-color: $white-text-color;
+    }
+    @media screen and (max-width: 767px) {
+         width: 100%;
+    }
+    @media screen and (min-width: 768px) {
+         width: 450px;
+         display: block;
     }
 }
 .subscription__btn {
