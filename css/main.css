@@ -1417,6 +1417,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .portfolio__item {
+    width: calc((100% - 30px * 3) / 3);
+  }
+}
+
 .portfolio__link {
   color: #212121;
   display: block;

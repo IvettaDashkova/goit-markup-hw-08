@@ -17,12 +17,9 @@
 	<body class="page-studio">
 		<!-- Хедер -->
 		<header class="header">
-			<!-- flexbox -->
 			<div class="container">
-				<!-- flexbox aligns-center -->
 				<nav class="navigation">
 					<a href="./index.html" lang="en" class="logo"> <span class="logo__accent">Web</span>Studio </a>
-					<!-- flexbox  -->
 					<button type="button" class="menu__btn" aria-expanded="false" aria-controls="menu__container" data-menu-button>
 						<svg width="40" height="40" aria-label="Переключатель мобильного меню">
 							<use class="menu__icon" href="./images/sprite.svg#icon-menu40"></use>
@@ -159,7 +156,6 @@
 			<section class="section we-are-doing">
 				<div class="container">
 					<h2 class="title">Чем мы занимаемся</h2>
-					<!-- flexbox -->
 					<ul class="we-are-doing__list">
 						<li class="we-are-doing__item">
 							<div class="we-are-doing__box">
@@ -186,7 +182,6 @@
 			<section class="section team">
 				<div class="container">
 					<h2 class="title">Наша команда</h2>
-					<!-- flexbox -->
 					<ul class="team-list">
 						<li class="team-item">
 							<img src="./images/img1.jpg" alt="Фото Игоря Демьяненко" width="270" height="260"/>
@@ -391,7 +386,6 @@
 		</main>
 		<!-- Футер -->
 		<footer class="footer">
-			<!-- flexbox -->
 			<div class="container footer-container">
 				<div class="address-box">
 					<a href="./index.html" lang="en" class="address-box__logo"> <span class="logo__accent">Web</span>Studio </a>
@@ -435,17 +429,19 @@
 					</ul>
 				</div>
 				<div class="subscription">
-					<form action="#" class="subscription__form">
-						<label>
-							<b>Подпишитесь на рассылку</b>
-							<input type="email" name="email" class="subscription__input" placeholder="E-mail" />
-						</label>
-						<button type="submit" class="subscription__btn">
-							Подписаться
-							<svg width="24" height="24" class="subscription__icon">
-								<use href="./images/sprite.svg#icon-send"></use>
-							</svg>
-						</button>
+					<form action="#">
+						<b>Подпишитесь на рассылку</b>
+						<div class="subscription__form">
+							<label>
+								<input type="email" name="email" class="subscription__input" placeholder="E-mail" />
+							</label>
+							<button type="submit" class="subscription__btn">
+								Подписаться
+								<svg width="24" height="24" class="subscription__icon">
+									<use href="./images/sprite.svg#icon-send"></use>
+								</svg>
+							</button>
+						</div>
 					</form>
 				</div>
 			</div>

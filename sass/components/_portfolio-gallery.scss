@@ -19,7 +19,10 @@
         margin: 15px;
         width: calc((100% - 60px) / 2);
     }
-    
+	
+	@media screen and (min-width: 1200px) {
+		width: calc((100% - 30px * 3) / 3);
+	}
 }
 .portfolio__link {
     @extend .link; 
