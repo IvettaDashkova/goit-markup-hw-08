@@ -1344,6 +1344,13 @@ img {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .page-portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .filter {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -1373,6 +1380,12 @@ img {
 @media screen and (min-width: 768px) {
   .filter__item {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter__item {
+    margin-bottom: 50px;
   }
 }
 
@@ -1474,6 +1487,12 @@ img {
 .portfolio__link:focus .portfolio__description {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__description {
+    padding: 63px 24px;
+  }
 }
 
 .portfolio-card {
