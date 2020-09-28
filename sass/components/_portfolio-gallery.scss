@@ -1,15 +1,25 @@
 .portfolio {
     @extend .list;
-    // @extend  .flexbox;
-	// flex-wrap: wrap;
-	// margin: -15px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+	    flex-wrap: wrap;
+	    margin: -15px;
+    }
+  
 }
 .portfolio__item {
-	// margin: 15px;
-    width: 100%;
+    @media screen and (max-width: 767px) {
+        width: 100%;
     &:not(:last-child) {
         margin-bottom: 30px;
+        }   
     }
+
+    @media screen and (min-width: 768px) {
+        margin: 15px;
+        width: calc((100% - 60px) / 2);
+    }
+    
 }
 .portfolio__link {
     @extend .link; 

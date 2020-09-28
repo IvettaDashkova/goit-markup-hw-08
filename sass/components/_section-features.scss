@@ -1,8 +1,10 @@
 .features {
-// 	padding-top: 94px;
-// 	padding-bottom: 94px;
     padding-top: 60px;
     padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px; 
+    }
 }
 .features__list {
     @extend .list;
@@ -23,10 +25,9 @@
         width: calc((100% - 2 * 30px) / 2);
         margin: 15px;
     }
-    // width: 270px;
-    // &:not(:last-child) {
-	// margin-right: 30px;
-    // }
+     @media screen and (min-width: 1200px) {
+        width: calc((100% - 4 * 30px) / 4);
+    }
 }
 .features__icon {
 	background-color: $color-bcg-btn;

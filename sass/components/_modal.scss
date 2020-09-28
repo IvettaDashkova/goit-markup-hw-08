@@ -1,6 +1,5 @@
 .backdrop {
     position: fixed;
-    padding: 93px 15px;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -13,28 +12,33 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &--is-hidden {
 	opacity: 0;
-	pointer-events: none;
-		& .backdrop__modal {
-		transform: translate(-50%, -50%) scale(0.1) rotate(360deg);
-    	}   
+	pointer-events: none; 
+    }
+    @media screen and (max-width: 767px) {
+        padding: 93px 15px;
+        overflow-y: scroll;
     }
 }
 .modal {
-	position: relative;
-	// top: 50%;
-	// left: 50%;
-	// width: 528px;
-    // height: 581px;
-    width: 450px;
-    height: 609px;
+    max-width: 450px;
 	padding: 40px;
 	background-color: $primery-bcg-color;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
-	// transform: translate(-50%, -50%) scale(1) rotate(0);
 	transition-property: transform;
 	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (max-width: 767px) {
+        position: relative;
+        // width: 450px;
+    }
+    @media screen and (min-width: 768px) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%) scale(1) rotate(0);
+    }
 }
 .modal__btn {
 	position: absolute;

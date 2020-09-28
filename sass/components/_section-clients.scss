@@ -1,8 +1,10 @@
 .clients {
-	// padding-top: 94px;
-    // padding-bottom: 94px;
     padding-top: 60px;
-	padding-bottom: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px; 
+    }
 }
 .clients__list {
     @extend .list;
@@ -13,15 +15,22 @@
 }
 .clients__item {
     margin: 15px;
+    @media screen and (min-width: 480px) {
+        width: calc((100% - 30px * 2) / 2); 
+    }
+
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 30px * 3) / 3); 
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 30px * 6) / 6); 
+    }
 }
-// .clients__item:not(:last-child) {
-// 	margin-right: 30px;
-// }
 .clients__link {
-	background-color: $primery-bcg-color;
-    // width: 170px;
-    width: 210px;
-	height: 90px;
+    background-color: $primery-bcg-color;
+    width: 100%;
+    height: 90px;
 	border: 1px solid #afb1b8;
 	border-radius: 4px;
 	color: #afb1b8;

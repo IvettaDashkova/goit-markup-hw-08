@@ -8,6 +8,7 @@ body {
 	letter-spacing: 0.03em;
 }
 .container {
+	width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -21,8 +22,8 @@ body {
     width: 768px;
   }
 
-  @media screen and (min-width: 1140px) {
-    width: 1140px;
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
   }
 }
 img {
@@ -38,8 +39,7 @@ img {
 .link {
 	text-decoration: none;
 	font-weight: 500;
-	line-height: 1.16; 
-// 	line-height: 1.14; 1.16;
+	line-height: 1.14; 
 	letter-spacing: 0.02em;
 	cursor: pointer;
 	transition-property: color;
@@ -71,10 +71,12 @@ img {
 	text-align: center;
 	margin: 0;
 	margin-bottom: 30px;
-// 	font-size: 36px;
-// 	line-height: 1.16;
-// 	margin: 0;
-// 	margin-bottom: 50px;
+	
+	@media screen and (min-width: 1200px) {
+		font-size: 36px;
+		line-height: 1.16;
+		margin-bottom: 50px;
+	}
 }
 .primery-text {
 	margin-top: 0;
