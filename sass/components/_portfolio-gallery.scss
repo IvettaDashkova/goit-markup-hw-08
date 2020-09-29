@@ -24,6 +24,10 @@
 		width: calc((100% - 30px * 3) / 3);
 	}
 }
+// .portfolio__img {
+// 	@media screen and (max-width: 767px) {
+//         height: 294px;}
+// }
 .portfolio__link {
     @extend .link; 
 	color: $primery-text-color;
