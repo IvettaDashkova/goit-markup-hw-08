@@ -1,5 +1,5 @@
 .backdrop {
-    position: fixed;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -9,36 +9,37 @@
 	opacity: 1;
 	transition-property: opacity;
 	transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &--is-hidden {
-	opacity: 0;
-	pointer-events: none; 
-    }
-    @media screen and (max-width: 767px) {
-        padding: 93px 15px;
-        overflow-y: scroll;
-    }
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	overflow-y: scroll;
+	&--is-hidden {
+		opacity: 0;
+		pointer-events: none;
+	}
+	@media screen and (max-width: 767px) {
+		padding: 93px 15px;
+		overflow-y: scroll;
+	}
 }
 .modal {
-    max-width: 450px;
+	max-width: 450px;
 	padding: 40px;
 	background-color: $primery-bcg-color;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
 	transition-property: transform;
 	transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    @media screen and (max-width: 767px) {
-        position: relative;
-        // width: 450px;
-    }
-    @media screen and (min-width: 768px) {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 100%;
-        transform: translate(-50%, -50%) scale(1) rotate(0);
-    }
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	@media screen and (max-width: 767px) {
+		position: relative;
+		// width: 450px;
+	}
+	@media screen and (min-width: 768px) {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%, -50%) scale(1) rotate(0);
+	}
 }
 .modal__btn {
 	position: absolute;
@@ -58,17 +59,17 @@
 .modal__icon {
 	transition-property: fill;
 	transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    .modal__btn:hover &,
-    .modal__btn:focus & {
-	fill: $color-accent;
-    }
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	.modal__btn:hover &,
+	.modal__btn:focus & {
+		fill: $color-accent;
+	}
 }
 .modal__title {
 	color: $primery-text-color;
 	font-weight: 700;
-    font-size: 20px;
-    line-height: 1.5;
+	font-size: 20px;
+	line-height: 1.5;
 	// line-height: 1.15;
 	text-align: center;
 	display: block;
@@ -99,13 +100,13 @@
 	height: 18px;
 	transition-property: fill;
 	transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    .form-field__input:focus + & {
-	fill: $color-accent;
-    }
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	.form-field__input:focus + & {
+		fill: $color-accent;
+	}
 }
 .form-field__input {
-    width: 100%;
+	width: 100%;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
 	padding-right: 11px;
@@ -114,32 +115,32 @@
 	padding-bottom: 12px;
 	transition-property: border-color;
 	transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:focus {
-	border-color: $color-accent;
-	outline: none;
-    }
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	&:focus {
+		border-color: $color-accent;
+		outline: none;
+	}
 }
 .form-field__comment {
 	resize: none;
 	height: 120px;
-    padding: 12px 16px;
-    width: 100%;
+	padding: 12px 16px;
+	width: 100%;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
 	transition-property: border-color;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &::placeholder {
-	font-size: 14px;
-	line-height: 1.14;
-	letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
-    }
-    &:focus {
-	border-color: $color-accent;
-	outline: none;
-    }
+	&::placeholder {
+		font-size: 14px;
+		line-height: 1.14;
+		letter-spacing: 0.01em;
+		color: rgba(117, 117, 117, 0.5);
+	}
+	&:focus {
+		border-color: $color-accent;
+		outline: none;
+	}
 }
 .form-field__btn {
 	background-color: $color-accent;
@@ -156,15 +157,15 @@
 	cursor: pointer;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-.form-field__checkbox  {
+.form-field__checkbox {
 	display: flex;
 	margin-top: 20px;
 	margin-bottom: 30px;
 	align-items: center;
-    justify-content: center;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
+	justify-content: center;
+	font-size: 12px;
+	line-height: 1.16;
+	letter-spacing: 0.03em;
 }
 .field-checkbox__check {
 	position: absolute;
@@ -184,18 +185,17 @@
 	background-image: url(../images/square.svg);
 	margin-right: 8px;
 	transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    .field-checkbox__check:checked + & {
-	border-radius: 2px;
-	border-color: $color-accent;
-	background-color: $color-accent;
-	background-image: url(../images/check.svg);
-	background-size: contain;
-	background-origin: border-box;
-    }
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	.field-checkbox__check:checked + & {
+		border-radius: 2px;
+		border-color: $color-accent;
+		background-color: $color-accent;
+		background-image: url(../images/check.svg);
+		background-size: contain;
+		background-origin: border-box;
+	}
 }
 .field-checkbox__link {
 	color: $color-accent;
-    margin-left: 3px;
-    
+	margin-left: 3px;
 }
