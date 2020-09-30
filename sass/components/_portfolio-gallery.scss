@@ -1,44 +1,43 @@
 .portfolio {
-    @extend .list;
-    @media screen and (min-width: 768px) {
-        display: flex;
-	    flex-wrap: wrap;
-	    margin: -15px;
-    }
-  
+	@extend .list;
+	@media screen and (min-width: 768px) {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -15px;
+	}
 }
 .portfolio__item {
-    @media screen and (max-width: 767px) {
-        width: 100%;
-    &:not(:last-child) {
-        margin-bottom: 30px;
-        }   
-    }
+	@media screen and (max-width: 767px) {
+		width: 100%;
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+	}
 
-    @media screen and (min-width: 768px) {
-        margin: 15px;
-        width: calc((100% - 60px) / 2);
-    }
-	
+	@media screen and (min-width: 768px) {
+		margin: 15px;
+		width: calc((100% - 60px) / 2);
+	}
+
 	@media screen and (min-width: 1200px) {
 		width: calc((100% - 30px * 3) / 3);
 	}
 }
 .portfolio__link {
-    @extend .link; 
+	@extend .link;
 	color: $primery-text-color;
 	display: block;
 	transition-property: box-shadow;
 	transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    }
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	&:hover,
+	&:focus {
+		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+	}
 }
 .portfolio__box {
 	position: relative;
-    overflow: hidden;
+	overflow: hidden;
 }
 .portfolio__description {
 	margin-top: 0;
@@ -50,17 +49,18 @@
 	background-color: rgba(33, 150, 243, 0.9);
 	color: $white-text-color;
 	font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
-    padding: 77px 24px;
+	font-weight: 400;
+	line-height: 1.56;
+	letter-spacing: 0.03em;
+	padding: 77px 24px;
 	transform: translateY(100%);
 	transition-property: transform;
 	transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-		.portfolio__link:hover &,
-		.portfolio__link:focus & {
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	.portfolio__link:hover &,
+	.portfolio__link:focus & {
 		transform: translateY(0%);
-		}
+	}
 	@media screen and (min-width: 768px) {
 		padding: 49px 24px;
 	}
@@ -76,7 +76,7 @@
 	border-left: 1px solid #eeeeee;
 }
 .portfolio-card__title {
-    @extend .title;
+	@extend .title;
 	font-weight: 700;
 	font-style: normal;
 	font-size: 18px;
@@ -87,7 +87,7 @@
 	text-align: left;
 }
 .portfolio-card__subtitle {
-    @extend .primery-text;
+	@extend .primery-text;
 	color: $secondary-text-color;
 	font-weight: 400;
 	font-size: 16px;
