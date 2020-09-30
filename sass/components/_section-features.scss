@@ -6,6 +6,17 @@
         padding-bottom: 94px; 
     }
 }
+// .features__container {
+//      @media screen and (min-width: 480px) {
+//         max-width: 767px;
+//     }
+//      @media screen and (min-width: 768px) {
+//         max-width: 1999px;
+//     }
+//      @media screen and (min-width: 1200px) {
+//         max-width: 1599px;
+//     }
+// }
 .features__list {
     @extend .list;
      @media screen and (min-width: 768px) {

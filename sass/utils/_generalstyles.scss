@@ -6,6 +6,9 @@ body {
 	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
+	@media screen and (max-width: 767px) {
+		padding-top: 60px;
+	}
 }
 .container {
 	width: 100%;
