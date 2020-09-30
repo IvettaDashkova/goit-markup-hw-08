@@ -98,7 +98,7 @@ img {
   }
 }
 
-.primery-text, .team-item__subtitle, .portfolio__description, .portfolio-card__subtitle {
+.primery-text, .team-item__subtitle, .portfolio-card__subtitle {
   margin-top: 0;
   margin-bottom: 0;
   color: #757575;
@@ -1492,6 +1492,8 @@ img {
 }
 
 .portfolio__description {
+  margin-top: 0;
+  margin-bottom: 0;
   position: absolute;
   bottom: 0;
   width: 100%;
