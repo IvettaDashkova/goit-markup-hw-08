@@ -1488,7 +1488,6 @@ img {
 .portfolio__box {
   position: relative;
   overflow: hidden;
-  height: 294px;
 }
 
 .portfolio__description {
@@ -1524,33 +1523,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .portfolio__description {
-    margin-top: 0;
-    margin-bottom: 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(33, 150, 243, 0.9);
-    color: #ffffff;
-    font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
     padding: 49px 24px;
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-    -webkit-transition-property: -webkit-transform;
-    transition-property: -webkit-transform;
-    transition-property: transform;
-    transition-property: transform, -webkit-transform;
-    -webkit-transition-duration: 250ms;
-            transition-duration: 250ms;
-    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .portfolio__link:hover .portfolio__description,
-  .portfolio__link:focus .portfolio__description {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
   }
 }
 
