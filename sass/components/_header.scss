@@ -1,8 +1,11 @@
 .header {
-    position: relative;
+    position: fixed;
     padding-top: 10px;
     padding-bottom: 10px;
+    background-color: $primery-bcg-color;
+    
     @media screen and (min-width: 768px) {
+        position: relative;
        padding-top: 0;
        padding-bottom: 0;
     }
