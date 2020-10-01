@@ -1,14 +1,15 @@
 .header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: $primery-bcg-color;
-    
-    @media screen and (min-width: 768px) {
-        position: relative;
-       padding-top: 0;
-       padding-bottom: 0;
-    }
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: $primery-bcg-color;
+
+	@media screen and (min-width: 768px) {
+		position: relative;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
 }
