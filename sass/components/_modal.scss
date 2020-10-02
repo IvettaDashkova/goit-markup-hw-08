@@ -35,14 +35,14 @@
 	}
 	@media screen and (min-width: 768px) {
 		position: absolute;
-		top: 50%;
+		// top: 50%;
 		left: 50%;
-		transform: translate(-50%, -20%) scale(1) rotate(0);
+		// transform: translate(-50%, -50%) scale(1) rotate(0);
+		transform: translate(-50%, 10%) scale(1) rotate(0);
 	}
 	@media screen and (min-width: 1200px) {
 		width: 528px;
 	}
-
 }
 .modal__btn {
 	position: absolute;
@@ -169,6 +169,10 @@
 	font-size: 12px;
 	line-height: 1.16;
 	letter-spacing: 0.03em;
+	@media screen and (min-width: 1200px) {
+		font-size: 14px;
+		line-height: 1.71;
+	}
 }
 .field-checkbox__check {
 	position: absolute;
