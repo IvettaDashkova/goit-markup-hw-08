@@ -18,11 +18,6 @@
 			screen and (min-resolution: 2dppx) {
 			background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 				url(../images/hero-mobile@2x.jpg);}
-
-	// @media screen and (min-width: 480px) {
-		
-	// 	}
-	// }
 	@media screen and (min-width: 768px) {
 		max-width: 768px;
 		padding-top: 118px;
