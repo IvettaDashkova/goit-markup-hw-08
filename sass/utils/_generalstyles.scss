@@ -9,7 +9,7 @@ body {
 	@media screen and (max-width: 767px) {
 		padding-top: 60px;
 	}
-	&.modal-open {
+	&.modal-is-open {
 		overflow: hidden;
 	}
 }

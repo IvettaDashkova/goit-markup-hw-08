@@ -14,7 +14,7 @@ body {
   }
 }
 
-body.modal-open {
+body.modal-is-open {
   overflow: hidden;
 }
 
@@ -536,13 +536,14 @@ img {
 }
 
 .backdrop {
+  overflow-y: scroll;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 1000;
   opacity: 1;
   -webkit-transition-property: opacity;
   transition-property: opacity;
@@ -550,7 +551,6 @@ img {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  overflow-y: scroll;
 }
 
 .backdrop--is-hidden {
@@ -561,12 +561,12 @@ img {
 @media screen and (max-width: 767px) {
   .backdrop {
     padding: 93px 15px;
-    overflow-y: scroll;
   }
 }
 
 .modal {
-  max-width: 450px;
+  overflow-y: scroll;
+  width: 450px;
   padding: 40px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -593,9 +593,14 @@ img {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 100%;
-    -webkit-transform: translate(-50%, -50%) scale(1) rotate(0);
-            transform: translate(-50%, -50%) scale(1) rotate(0);
+    -webkit-transform: translate(-50%, -20%) scale(1) rotate(0);
+            transform: translate(-50%, -20%) scale(1) rotate(0);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
   }
 }
 
@@ -1563,6 +1568,12 @@ img {
   margin-top: 0em;
   margin-bottom: 4px;
   text-align: left;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1999px) {
+  .portfolio-card__title {
+    font-size: 17px;
+  }
 }
 
 .portfolio-card__subtitle {
