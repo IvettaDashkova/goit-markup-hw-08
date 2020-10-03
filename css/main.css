@@ -145,6 +145,7 @@ img {
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #ffffff;
+  border-bottom: 1px solid #ececec;
 }
 
 @media screen and (min-width: 768px) {
@@ -1387,10 +1388,6 @@ img {
 .subscription__icon {
   fill: currentColor;
   margin-left: 10px;
-}
-
-.portfolio-header {
-  border-bottom: 1px solid #ececec;
 }
 
 .page-portfolio {
