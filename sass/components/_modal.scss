@@ -36,19 +36,18 @@
 	transition-property: transform;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	left: 50%;
+    transform: translate(-50%, 0%);
 	@media screen and (max-width: 767px) {
 		position: relative;
-		left: 50%;
-    	transform: translate(-50%, 0%);
+		
 	}
 	@media screen and (min-width: 768px) {
 		position: absolute;
 		top: 10%;
-		left: 20%;
 	}
 	@media screen and (min-width: 1200px) {
 		width: 528px;
-		left: 30%;
 	}
 }
 .modal__btn {

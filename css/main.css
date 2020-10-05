@@ -605,14 +605,14 @@ img {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
 }
 
 @media screen and (max-width: 767px) {
   .modal {
     position: relative;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0%);
-            transform: translate(-50%, 0%);
   }
 }
 
@@ -620,14 +620,12 @@ img {
   .modal {
     position: absolute;
     top: 10%;
-    left: 20%;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    left: 30%;
   }
 }
 
