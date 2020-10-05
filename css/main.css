@@ -44,6 +44,13 @@ body.modal-is-open {
   }
 }
 
+.responsive-container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 img {
   display: block;
   width: 100%;
@@ -561,13 +568,21 @@ img {
   pointer-events: none;
 }
 
+.backdrop--is-hidden .backdrop__modal {
+  -webkit-transform: translate(-50%, -50%) scale(0.1) rotate(360deg);
+          transform: translate(-50%, -50%) scale(0.1) rotate(360deg);
+}
+
 @media screen and (max-width: 767px) {
   .backdrop {
-    padding: 93px 15px;
+    padding-top: 93px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
 .modal {
+  display: inline-block;
   overflow-y: scroll;
   width: 450px;
   padding: 40px;
@@ -594,15 +609,15 @@ img {
 @media screen and (min-width: 768px) {
   .modal {
     position: absolute;
-    left: 50%;
-    -webkit-transform: translate(-50%, 10%) scale(1) rotate(0);
-            transform: translate(-50%, 10%) scale(1) rotate(0);
+    top: 10%;
+    left: 20%;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
+    left: 30%;
   }
 }
 
@@ -648,6 +663,12 @@ img {
   text-align: center;
   display: block;
   margin-bottom: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    line-height: 1.15;
+  }
 }
 
 .modal__form {

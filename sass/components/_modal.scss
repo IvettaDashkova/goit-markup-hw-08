@@ -15,12 +15,18 @@
 	&--is-hidden {
 		opacity: 0;
 		pointer-events: none;
+		& .backdrop__modal {
+		transform: translate(-50%, -50%) scale(0.1) rotate(360deg);
+    	}   
 	}
 	@media screen and (max-width: 767px) {
-		padding: 93px 15px;
+		padding-top: 93px;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 }
 .modal {
+	display: inline-block;
 	overflow-y: scroll;
 	width: 450px;
 	padding: 40px;
@@ -35,13 +41,17 @@
 	}
 	@media screen and (min-width: 768px) {
 		position: absolute;
-		// top: 50%;
-		left: 50%;
-		// transform: translate(-50%, -50%) scale(1) rotate(0);
-		transform: translate(-50%, 10%) scale(1) rotate(0);
+		top: 10%;
+		left: 20%;
+
+		// transform: translate(50%, 0) rotate(0) scale(1);
+		
+		// // transform: translate(-50%, -50%) scale(1) rotate(0);
+		// transform: translate(-50%, 0) scale(1) rotate(0);
 	}
 	@media screen and (min-width: 1200px) {
 		width: 528px;
+		left: 30%;
 	}
 }
 .modal__btn {
@@ -73,10 +83,12 @@
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 1.5;
-	// line-height: 1.15;
 	text-align: center;
 	display: block;
 	margin-bottom: 12px;
+	@media screen and (min-width: 1200px) {
+		line-height: 1.15;
+	}
 }
 .modal__form {
 	color: $secondary-text-color;
