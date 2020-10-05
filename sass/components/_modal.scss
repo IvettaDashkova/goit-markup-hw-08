@@ -38,16 +38,13 @@
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	@media screen and (max-width: 767px) {
 		position: relative;
+		left: 50%;
+    	transform: translate(-50%, 0%);
 	}
 	@media screen and (min-width: 768px) {
 		position: absolute;
 		top: 10%;
 		left: 20%;
-
-		// transform: translate(50%, 0) rotate(0) scale(1);
-		
-		// // transform: translate(-50%, -50%) scale(1) rotate(0);
-		// transform: translate(-50%, 0) scale(1) rotate(0);
 	}
 	@media screen and (min-width: 1200px) {
 		width: 528px;
