@@ -55,6 +55,9 @@
 	border-radius: 2px;
 	background-color: $color-accent;
     content: "";  
+    @media screen and (min-width: 768px) {
+        bottom: -1px;
+        }
     }
 
     &:hover,
