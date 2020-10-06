@@ -124,7 +124,7 @@
 	@media screen and (min-width: 1200px) {
 		display: flex;
 		flex-wrap: wrap;
-		align-items: baseline;
+		align-items: center;
 	}
 }
 .subscription__input {
@@ -151,7 +151,6 @@
 	}
 	@media screen and (min-width: 1200px) {
 		width: 350px;
-		margin-bottom: 0;
 	}
 }
 .subscription__btn {
