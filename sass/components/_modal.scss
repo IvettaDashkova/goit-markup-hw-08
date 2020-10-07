@@ -16,8 +16,8 @@
 		opacity: 0;
 		pointer-events: none;
 		& .backdrop__modal {
-		transform: translate(-50%, -50%) scale(0.1) rotate(360deg);
-    	}   
+			transform: translate(-50%, -50%) scale(0.1) rotate(360deg);
+		}
 	}
 	@media screen and (max-width: 767px) {
 		padding-top: 93px;
@@ -37,10 +37,9 @@
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	left: 50%;
-    transform: translate(-50%, 0%);
+	transform: translate(-50%, 0%);
 	@media screen and (max-width: 767px) {
 		position: relative;
-		
 	}
 	@media screen and (min-width: 768px) {
 		position: absolute;
@@ -181,7 +180,6 @@
 		font-size: 14px;
 		line-height: 1.71;
 	}
-	
 }
 .field-checkbox__check {
 	position: absolute;
