@@ -7,6 +7,8 @@
 	}
 }
 .portfolio__item {
+	display: none;
+	 animation: fadeEffect 500ms;
 	@media screen and (max-width: 767px) {
 		width: 100%;
 		&:not(:last-child) {
@@ -21,6 +23,9 @@
 
 	@media screen and (min-width: 1200px) {
 		width: calc((100% - 30px * 3) / 3);
+	}
+	&.card--active {
+		display: block;
 	}
 }
 .portfolio__link {
@@ -96,4 +101,12 @@
 	font-size: 16px;
 	line-height: 1.87;
 	letter-spacing: 0.03em;
+}
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

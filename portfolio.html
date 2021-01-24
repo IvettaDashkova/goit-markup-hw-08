@@ -72,23 +72,23 @@
 		<main class="page-portfolio">
 			<section class="container section">
 				<h1 class="visually-hidden">Наши работы</h1>
-				<ul class="filter">
-					<li class="filter__item"><button type="button" name="Кнопка Все работы" class="filter__btn">Все</button></li>
+				<ul class="filter controls" data-controls>
+					<li class="filter__item"><button type="button" name="Кнопка Все работы" class="filter__btn filter__btn--active" id="all">Все</button></li>
 					<li class="filter__item">
-						<button type="button" name="Кнопка Работы-Веб-сайты" class="filter__btn">Веб-сайты</button>
+						<button type="button" name="Кнопка Работы-Веб-сайты" class="filter__btn" id="website">Веб-сайты</button>
 					</li>
 					<li class="filter__item">
-						<button type="button" name="Кнопка Работы-приложения" class="filter__btn">Приложения</button>
+						<button type="button" name="Кнопка Работы-приложения" class="filter__btn" id="application">Приложения</button>
 					</li>
 					<li class="filter__item">
-						<button type="button" name="Кнопка Работы-дизайны" class="filter__btn">Дизайн</button>
+						<button type="button" name="Кнопка Работы-дизайны" class="filter__btn" id="design">Дизайн</button>
 					</li>
 					<li class="filter__item">
-						<button type="button" name="Кнопка Работы-маркетинг" class="filter__btn">Маркетинг</button>
+						<button type="button" name="Кнопка Работы-маркетинг" class="filter__btn" id="marketing">Маркетинг</button>
 					</li>
 				</ul>
-				<ul class="portfolio">
-					<li class="portfolio__item">
+				<ul class="portfolio" data-cards>
+					<li class="portfolio__item card--active" data-website>
 						<a href="" class="portfolio__link">
 							<div class="portfolio__box">
 								<picture>
@@ -129,7 +129,7 @@
 							</div>
 						</a>
 					</li>
-					<li class="portfolio__item">
+					<li class="portfolio__item card--active" data-design>
 						<a href="" class="portfolio__link">
 							<div class="portfolio__box">
 								<picture>
@@ -170,7 +170,7 @@
 							</div>
 						</a>
 					</li>
-					<li class="portfolio__item">
+					<li class="portfolio__item card--active" data-application>
 						<a href="" class="portfolio__link">
 							<div class="portfolio__box">
 								<picture>
@@ -211,7 +211,7 @@
 							</div>
 						</a>
 					</li>
-					<li class="portfolio__item">
+					<li class="portfolio__item card--active" data-marketing>
 						<a href="" class="portfolio__link">
 							<div class="portfolio__box">
 								<picture>
@@ -252,7 +252,7 @@
 							</div>
 						</a>
 					</li>
-					<li class="portfolio__item">
+					<li class="portfolio__item card--active" data-application>
 						<a href="" class="portfolio__link">
 							<div class="portfolio__box">
 								<picture>
@@ -293,7 +293,7 @@
 							</div>
 						</a>
 					</li>
-					<li class="portfolio__item">
+					<li class="portfolio__item card--active" data-website>
 						<a href="" class="portfolio__link">
 							<div class="portfolio__box">
 								<picture>
@@ -334,7 +334,7 @@
 							</div>
 						</a>
 					</li>
-					<li class="portfolio__item">
+					<li class="portfolio__item card--active" data-design>
 						<a href="" class="portfolio__link">
 							<div class="portfolio__box">
 								<picture>
@@ -375,7 +375,7 @@
 							</div>
 						</a>
 					</li>
-					<li class="portfolio__item">
+					<li class="portfolio__item card--active" data-marketing>
 						<a href="" class="portfolio__link">
 							<div class="portfolio__box">
 								<picture>
@@ -416,7 +416,7 @@
 							</div>
 						</a>
 					</li>
-					<li class="portfolio__item">
+					<li class="portfolio__item card--active" data-application>
 						<a href="" class="portfolio__link">
 							<div class="portfolio__box">
 								<picture>
@@ -523,5 +523,6 @@
 			</div>
 		</footer>
 		<script src="./js/menu.js"></script>
+		<script src="./js/tabs.js"></script>
 	</body>
 </html>
