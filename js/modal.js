@@ -8,14 +8,14 @@
     refs.openModalBtn.addEventListener("click", toggleModal)
     refs.closeModalBtn.addEventListener("click", toggleModal)
 
-//     refs.backdrop.addEventListener("click", logBackdropClick)
+    refs.backdrop.addEventListener("click", logBackdropClick)
 
     function toggleModal() {
         document.body.classList.toggle("modal-is-open")
         refs.backdrop.classList.toggle("backdrop--is-hidden")
     }
 
-//     function logBackdropClick() {
-//         console.log("Это клик в бекдроп")
-//     }
+    function logBackdropClick() {
+        console.log("Это клик в бекдроп")
+    }
 })();
